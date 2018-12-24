@@ -259,3 +259,10 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/Flame32/font1.png
+/Flame32/font2.png
+/Flame32/font3.png
+/Flame32/font4.png
+/Flame32FontBuilder/gfx_fonts.asm
+/flame32-os.bin
+/flame32-os.hexd

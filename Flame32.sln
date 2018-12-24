@@ -4,26 +4,69 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Flame32", "Flame32\Flame32.vcxproj", "{FD3FD6A8-BBFC-4FE8-98D9-C39CA6C9F514}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F8AC3F47-0D31-4344-846F-934502754680} = {F8AC3F47-0D31-4344-846F-934502754680}
+		{787E6D60-B0F5-444C-AA3F-BB1450FFB80F} = {787E6D60-B0F5-444C-AA3F-BB1450FFB80F}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B47C37CF-F355-4DF6-9910-E6034F807579}"
+	ProjectSection(SolutionItems) = preProject
+		Flame32-Architecture.md = Flame32-Architecture.md
+		flame32-bios-banks.asm = flame32-bios-banks.asm
+		flame32-bios.asm = flame32-bios.asm
+		flame32-new.asm = flame32-new.asm
+		flame32-os.asm = flame32-os.asm
+		flame32-user-banks.asm = flame32-user-banks.asm
+		flame32.asm = flame32.asm
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "flam32-libs", "flam32-libs", "{7924F8EA-2636-41EF-9C04-C556C8824897}"
+	ProjectSection(SolutionItems) = preProject
+		flame32-libs\gfx.asm = flame32-libs\gfx.asm
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gfx", "gfx", "{09D6C107-5F74-4D0C-8CBE-28623B1602B2}"
+	ProjectSection(SolutionItems) = preProject
+		flame32-libs\gfx\mode0.asm = flame32-libs\gfx\mode0.asm
+		flame32-libs\gfx\mode1.asm = flame32-libs\gfx\mode1.asm
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Flame32Lib", "Flame32Lib\Flame32Lib.vcxproj", "{787E6D60-B0F5-444C-AA3F-BB1450FFB80F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Flame32-Test", "Flame32-Test\Flame32-Test.vcxproj", "{5A7FD7B5-7845-439B-A838-52D739B89DD5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "unit-tests", "unit-tests", "{65FA7CD3-4CA1-47AA-8303-C0E161FCDE6B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Flame32FontBuilder", "Flame32FontBuilder\Flame32FontBuilder.vcxproj", "{F8AC3F47-0D31-4344-846F-934502754680}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
 		Release|x64 = Release|x64
-		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{FD3FD6A8-BBFC-4FE8-98D9-C39CA6C9F514}.Debug|x64.ActiveCfg = Debug|x64
 		{FD3FD6A8-BBFC-4FE8-98D9-C39CA6C9F514}.Debug|x64.Build.0 = Debug|x64
-		{FD3FD6A8-BBFC-4FE8-98D9-C39CA6C9F514}.Debug|x86.ActiveCfg = Debug|Win32
-		{FD3FD6A8-BBFC-4FE8-98D9-C39CA6C9F514}.Debug|x86.Build.0 = Debug|Win32
 		{FD3FD6A8-BBFC-4FE8-98D9-C39CA6C9F514}.Release|x64.ActiveCfg = Release|x64
 		{FD3FD6A8-BBFC-4FE8-98D9-C39CA6C9F514}.Release|x64.Build.0 = Release|x64
-		{FD3FD6A8-BBFC-4FE8-98D9-C39CA6C9F514}.Release|x86.ActiveCfg = Release|Win32
-		{FD3FD6A8-BBFC-4FE8-98D9-C39CA6C9F514}.Release|x86.Build.0 = Release|Win32
+		{787E6D60-B0F5-444C-AA3F-BB1450FFB80F}.Debug|x64.ActiveCfg = Debug|x64
+		{787E6D60-B0F5-444C-AA3F-BB1450FFB80F}.Debug|x64.Build.0 = Debug|x64
+		{787E6D60-B0F5-444C-AA3F-BB1450FFB80F}.Release|x64.ActiveCfg = Release|x64
+		{787E6D60-B0F5-444C-AA3F-BB1450FFB80F}.Release|x64.Build.0 = Release|x64
+		{5A7FD7B5-7845-439B-A838-52D739B89DD5}.Debug|x64.ActiveCfg = Debug|x64
+		{5A7FD7B5-7845-439B-A838-52D739B89DD5}.Release|x64.ActiveCfg = Release|x64
+		{F8AC3F47-0D31-4344-846F-934502754680}.Debug|x64.ActiveCfg = Debug|x64
+		{F8AC3F47-0D31-4344-846F-934502754680}.Debug|x64.Build.0 = Debug|x64
+		{F8AC3F47-0D31-4344-846F-934502754680}.Release|x64.ActiveCfg = Release|x64
+		{F8AC3F47-0D31-4344-846F-934502754680}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7924F8EA-2636-41EF-9C04-C556C8824897} = {B47C37CF-F355-4DF6-9910-E6034F807579}
+		{09D6C107-5F74-4D0C-8CBE-28623B1602B2} = {7924F8EA-2636-41EF-9C04-C556C8824897}
+		{65FA7CD3-4CA1-47AA-8303-C0E161FCDE6B} = {7924F8EA-2636-41EF-9C04-C556C8824897}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4065A5C6-5689-4FB5-B657-6C4AF839C6CF}

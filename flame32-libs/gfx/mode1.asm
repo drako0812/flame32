@@ -1,0 +1,3 @@
+#str "__FLAME32_GFX_MODE1_BEGIN"
+
+#str "__FLAME32_GFX_MODE1_END"
